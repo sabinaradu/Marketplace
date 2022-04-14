@@ -1,0 +1,28 @@
+Nume: Radu Sabina-Ioana
+Grupa: 331CB
+
+1. Organizare:
+
+Tema are ca principiu simularea unui marketplace, folosind notiuni de
+multithreading. Astfel, pentru implementare am folosit structuri thread-safe
+precum dictionare si liste. In zonele critice din clasa marketplace am folosit
+lock-uri pentru a securiza operatiile. Am folosit 2 dictionare, unul pentru
+producatori si unul pentru cart-uri. Dictionarul pentru producatori are ca si
+cheie id-ul producatorului curent si ca valoare are o lista de produse. Celalalt
+dictionar are ca si cheie id-ul consumatorului corespunzator lui, iar ca valoare
+o lista de liste ( [[prouct1, id_product], ...).
+
+Consider ca tema este utila deoarece, personal, am reusit sa inteleg mai bine
+cum functioneaza lucrul pe mai multe thread-uri si cum pot sa rezolv problemele
+ce pot aparea de la utilizarea necorespunzatoare a acestora.
+
+2. Implementare:
+
+Intregul enunt a fost implementat, iar programul trece toate testele. Pe parcursul
+temei, principalele dificultati au aparut la folosirea elementelor de sincronizare.
+
+3. Bibliografie:
+
+https://ocw.cs.pub.ro/courses/asc/laboratoare/01
+https://ocw.cs.pub.ro/courses/asc/laboratoare/02
+https://ocw.cs.pub.ro/courses/asc/laboratoare/03
